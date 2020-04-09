@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootst.."
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <center>
+    <br>
+    <div class="cont">
+      <div class="tit">
+        <h3>Расчёт</h3>
+        <p id="result"></p>
+      </div>
+      <div class="header">
+        <a>Толщина бревна (мм)</a>
+        <input type="text" class="form-control add-count validation wood" id="wood" autofocus required maxlength="25"
+          placeholder="0" required pattern=[0-9]>
+      </div>
+      <div class="firstbox">
+        <div class="daughter">
+          <h3>Размеры сруба дома</h3>
+          <a>Длина</a>
+          <input type="text" class="form-control add-count validation length" required maxlength="25" placeholder="0"
+            id="length" required pattern=[0-9]>
+        </div>
+        <div class="daughter">
+          <a>Ширина</a>
+          <input type="text" class="form-control add-count validation width" required maxlength="25" placeholder="0"
+            id="width" required pattern=[0-9]>
+        </div>
+        <div class="daughter">
+          <a>Высота</a>
+          <input type="text" class="form-control add-count validation height" required maxlength="25" placeholder="0"
+            id="height" required pattern=[0-9]>
+        </div>
+      </div>
+      <div class=firstbox>
+        <h3>Межкомнатные стены и их размеры</h3>
+        <div class="walls">
+          <div class="wall-block daughter">
+              <a>Стена 1</a>
+              <input type="text" class="form-control add-count validation wall" required maxlength="25" placeholder="0"
+                  id="wall" required pattern=[0-9]>
+          </div>
+        </div>
+      </div>
+      <div class="secondbox">
+        <div class="daughter">
+          <button type="button" class="btn btn-outline-dark" id="add-btn">Добавить стену</button>
+        </div>
+        <div class="daughter">
+          <button class="btn btn-outline-dark" id="rem-btn">Удалить стену</button>
+        </div>
+        <div class="daughter">
+          <button class="btn btn-outline-dark res-btn" id="res-btn">Расчет бревен</button>
+        </div>
+      </div>
+    </div>
+  </center>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
